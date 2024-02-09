@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50C894FB2B766959006EF270 /* Kapde_LeloApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C894FA2B766959006EF270 /* Kapde_LeloApp.swift */; };
+		50C894FD2B766959006EF270 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C894FC2B766959006EF270 /* ContentView.swift */; };
+		50C894FF2B76695B006EF270 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C894FE2B76695B006EF270 /* Assets.xcassets */; };
+		50C895022B76695B006EF270 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50C895012B76695B006EF270 /* Preview Assets.xcassets */; };
+		50C8950C2B76695B006EF270 /* Kapde_LeloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C8950B2B76695B006EF270 /* Kapde_LeloTests.swift */; };
+		50C895162B76695B006EF270 /* Kapde_LeloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C895152B76695B006EF270 /* Kapde_LeloUITests.swift */; };
+		50C895182B76695B006EF270 /* Kapde_LeloUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C895172B76695B006EF270 /* Kapde_LeloUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50C895082B76695B006EF270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50C894EF2B766959006EF270 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50C894F62B766959006EF270;
+			remoteInfo = "Kapde Lelo";
+		};
+		50C895122B76695B006EF270 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50C894EF2B766959006EF270 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50C894F62B766959006EF270;
+			remoteInfo = "Kapde Lelo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50C894F72B766959006EF270 /* Kapde Lelo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Kapde Lelo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C894FA2B766959006EF270 /* Kapde_LeloApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kapde_LeloApp.swift; sourceTree = "<group>"; };
+		50C894FC2B766959006EF270 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		50C894FE2B76695B006EF270 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50C895012B76695B006EF270 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		50C895072B76695B006EF270 /* Kapde LeloTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kapde LeloTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C8950B2B76695B006EF270 /* Kapde_LeloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kapde_LeloTests.swift; sourceTree = "<group>"; };
+		50C895112B76695B006EF270 /* Kapde LeloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kapde LeloUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C895152B76695B006EF270 /* Kapde_LeloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kapde_LeloUITests.swift; sourceTree = "<group>"; };
+		50C895172B76695B006EF270 /* Kapde_LeloUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kapde_LeloUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50C894F42B766959006EF270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C895042B76695B006EF270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C8950E2B76695B006EF270 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50C894EE2B766959006EF270 = {
+			isa = PBXGroup;
+			children = (
+				50C894F92B766959006EF270 /* Kapde Lelo */,
+				50C8950A2B76695B006EF270 /* Kapde LeloTests */,
+				50C895142B76695B006EF270 /* Kapde LeloUITests */,
+				50C894F82B766959006EF270 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50C894F82B766959006EF270 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50C894F72B766959006EF270 /* Kapde Lelo.app */,
+				50C895072B76695B006EF270 /* Kapde LeloTests.xctest */,
+				50C895112B76695B006EF270 /* Kapde LeloUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50C894F92B766959006EF270 /* Kapde Lelo */ = {
+			isa = PBXGroup;
+			children = (
+				50C894FA2B766959006EF270 /* Kapde_LeloApp.swift */,
+				50C894FC2B766959006EF270 /* ContentView.swift */,
+				50C894FE2B76695B006EF270 /* Assets.xcassets */,
+				50C895002B76695B006EF270 /* Preview Content */,
+			);
+			path = "Kapde Lelo";
+			sourceTree = "<group>";
+		};
+		50C895002B76695B006EF270 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				50C895012B76695B006EF270 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		50C8950A2B76695B006EF270 /* Kapde LeloTests */ = {
+			isa = PBXGroup;
+			children = (
+				50C8950B2B76695B006EF270 /* Kapde_LeloTests.swift */,
+			);
+			path = "Kapde LeloTests";
+			sourceTree = "<group>";
+		};
+		50C895142B76695B006EF270 /* Kapde LeloUITests */ = {
+			isa = PBXGroup;
+			children = (
+				50C895152B76695B006EF270 /* Kapde_LeloUITests.swift */,
+				50C895172B76695B006EF270 /* Kapde_LeloUITestsLaunchTests.swift */,
+			);
+			path = "Kapde LeloUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50C894F62B766959006EF270 /* Kapde Lelo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C8951B2B76695B006EF270 /* Build configuration list for PBXNativeTarget "Kapde Lelo" */;
+			buildPhases = (
+				50C894F32B766959006EF270 /* Sources */,
+				50C894F42B766959006EF270 /* Frameworks */,
+				50C894F52B766959006EF270 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Kapde Lelo";
+			productName = "Kapde Lelo";
+			productReference = 50C894F72B766959006EF270 /* Kapde Lelo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50C895062B76695B006EF270 /* Kapde LeloTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C8951E2B76695B006EF270 /* Build configuration list for PBXNativeTarget "Kapde LeloTests" */;
+			buildPhases = (
+				50C895032B76695B006EF270 /* Sources */,
+				50C895042B76695B006EF270 /* Frameworks */,
+				50C895052B76695B006EF270 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50C895092B76695B006EF270 /* PBXTargetDependency */,
+			);
+			name = "Kapde LeloTests";
+			productName = "Kapde LeloTests";
+			productReference = 50C895072B76695B006EF270 /* Kapde LeloTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		50C895102B76695B006EF270 /* Kapde LeloUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C895212B76695B006EF270 /* Build configuration list for PBXNativeTarget "Kapde LeloUITests" */;
+			buildPhases = (
+				50C8950D2B76695B006EF270 /* Sources */,
+				50C8950E2B76695B006EF270 /* Frameworks */,
+				50C8950F2B76695B006EF270 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50C895132B76695B006EF270 /* PBXTargetDependency */,
+			);
+			name = "Kapde LeloUITests";
+			productName = "Kapde LeloUITests";
+			productReference = 50C895112B76695B006EF270 /* Kapde LeloUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50C894EF2B766959006EF270 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					50C894F62B766959006EF270 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					50C895062B76695B006EF270 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 50C894F62B766959006EF270;
+					};
+					50C895102B76695B006EF270 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 50C894F62B766959006EF270;
+					};
+				};
+			};
+			buildConfigurationList = 50C894F22B766959006EF270 /* Build configuration list for PBXProject "Kapde Lelo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50C894EE2B766959006EF270;
+			productRefGroup = 50C894F82B766959006EF270 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50C894F62B766959006EF270 /* Kapde Lelo */,
+				50C895062B76695B006EF270 /* Kapde LeloTests */,
+				50C895102B76695B006EF270 /* Kapde LeloUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50C894F52B766959006EF270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C895022B76695B006EF270 /* Preview Assets.xcassets in Resources */,
+				50C894FF2B76695B006EF270 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C895052B76695B006EF270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C8950F2B76695B006EF270 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50C894F32B766959006EF270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C894FD2B766959006EF270 /* ContentView.swift in Sources */,
+				50C894FB2B766959006EF270 /* Kapde_LeloApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C895032B76695B006EF270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C8950C2B76695B006EF270 /* Kapde_LeloTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C8950D2B76695B006EF270 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C895182B76695B006EF270 /* Kapde_LeloUITestsLaunchTests.swift in Sources */,
+				50C895162B76695B006EF270 /* Kapde_LeloUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50C895092B76695B006EF270 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50C894F62B766959006EF270 /* Kapde Lelo */;
+			targetProxy = 50C895082B76695B006EF270 /* PBXContainerItemProxy */;
+		};
+		50C895132B76695B006EF270 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50C894F62B766959006EF270 /* Kapde Lelo */;
+			targetProxy = 50C895122B76695B006EF270 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		50C895192B76695B006EF270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50C8951A2B76695B006EF270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50C8951C2B76695B006EF270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kapde Lelo/Preview Content\"";
+				DEVELOPMENT_TEAM = 637U2CRCZ4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AmanRaghuvanshi.Kapde-Lelo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50C8951D2B76695B006EF270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Kapde Lelo/Preview Content\"";
+				DEVELOPMENT_TEAM = 637U2CRCZ4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AmanRaghuvanshi.Kapde-Lelo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		50C8951F2B76695B006EF270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 637U2CRCZ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AmanRaghuvanshi.Kapde-LeloTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kapde Lelo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kapde Lelo";
+			};
+			name = Debug;
+		};
+		50C895202B76695B006EF270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 637U2CRCZ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AmanRaghuvanshi.Kapde-LeloTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kapde Lelo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kapde Lelo";
+			};
+			name = Release;
+		};
+		50C895222B76695B006EF270 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 637U2CRCZ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AmanRaghuvanshi.Kapde-LeloUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Kapde Lelo";
+			};
+			name = Debug;
+		};
+		50C895232B76695B006EF270 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 637U2CRCZ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AmanRaghuvanshi.Kapde-LeloUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Kapde Lelo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50C894F22B766959006EF270 /* Build configuration list for PBXProject "Kapde Lelo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C895192B76695B006EF270 /* Debug */,
+				50C8951A2B76695B006EF270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50C8951B2B76695B006EF270 /* Build configuration list for PBXNativeTarget "Kapde Lelo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C8951C2B76695B006EF270 /* Debug */,
+				50C8951D2B76695B006EF270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50C8951E2B76695B006EF270 /* Build configuration list for PBXNativeTarget "Kapde LeloTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C8951F2B76695B006EF270 /* Debug */,
+				50C895202B76695B006EF270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50C895212B76695B006EF270 /* Build configuration list for PBXNativeTarget "Kapde LeloUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C895222B76695B006EF270 /* Debug */,
+				50C895232B76695B006EF270 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50C894EF2B766959006EF270 /* Project object */;
+}
