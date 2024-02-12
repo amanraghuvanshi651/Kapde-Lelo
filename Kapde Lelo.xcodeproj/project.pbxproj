@@ -14,6 +14,23 @@
 		50C8950C2B76695B006EF270 /* Kapde_LeloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C8950B2B76695B006EF270 /* Kapde_LeloTests.swift */; };
 		50C895162B76695B006EF270 /* Kapde_LeloUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C895152B76695B006EF270 /* Kapde_LeloUITests.swift */; };
 		50C895182B76695B006EF270 /* Kapde_LeloUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C895172B76695B006EF270 /* Kapde_LeloUITestsLaunchTests.swift */; };
+		50C895292B766BF3006EF270 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C895282B766BF3006EF270 /* ContentViewModel.swift */; };
+		50CB7A9B2B79F6110065FDD7 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB7A9A2B79F6110065FDD7 /* AppState.swift */; };
+		50CB7A9E2B79F63C0065FDD7 /* ConstantStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB7A9D2B79F63C0065FDD7 /* ConstantStrings.swift */; };
+		50CB7AA02B79F6B40065FDD7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB7A9F2B79F6B40065FDD7 /* LoginView.swift */; };
+		50CB7AA22B79F6FA0065FDD7 /* KapdeLeloTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB7AA12B79F6FA0065FDD7 /* KapdeLeloTabView.swift */; };
+		50CB7AA42B7A2A3D0065FDD7 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB7AA32B7A2A3D0065FDD7 /* CreateAccountView.swift */; };
+		50CB7AA62B7A2A480065FDD7 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB7AA52B7A2A480065FDD7 /* SignUpView.swift */; };
+		50CB7AB12B7A53800065FDD7 /* SFPRODISPLAYTHINITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 50CB7AA82B7A537F0065FDD7 /* SFPRODISPLAYTHINITALIC.OTF */; };
+		50CB7AB22B7A53800065FDD7 /* SFPRODISPLAYBOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 50CB7AA92B7A53800065FDD7 /* SFPRODISPLAYBOLD.OTF */; };
+		50CB7AB32B7A53800065FDD7 /* SFPRODISPLAYLIGHTITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 50CB7AAA2B7A53800065FDD7 /* SFPRODISPLAYLIGHTITALIC.OTF */; };
+		50CB7AB42B7A53800065FDD7 /* SFPRODISPLAYMEDIUM.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 50CB7AAB2B7A53800065FDD7 /* SFPRODISPLAYMEDIUM.OTF */; };
+		50CB7AB52B7A53800065FDD7 /* SFPRODISPLAYREGULAR.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 50CB7AAC2B7A53800065FDD7 /* SFPRODISPLAYREGULAR.OTF */; };
+		50CB7AB62B7A53800065FDD7 /* SFPRODISPLAYHEAVYITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 50CB7AAD2B7A53800065FDD7 /* SFPRODISPLAYHEAVYITALIC.OTF */; };
+		50CB7AB72B7A53800065FDD7 /* SFPRODISPLAYBLACKITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 50CB7AAE2B7A53800065FDD7 /* SFPRODISPLAYBLACKITALIC.OTF */; };
+		50CB7AB82B7A53800065FDD7 /* SFPRODISPLAYSEMIBOLDITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 50CB7AAF2B7A53800065FDD7 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */; };
+		50CB7AB92B7A53800065FDD7 /* SFPRODISPLAYULTRALIGHTITALIC.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 50CB7AB02B7A53800065FDD7 /* SFPRODISPLAYULTRALIGHTITALIC.OTF */; };
+		50CB7ABC2B7A569F0065FDD7 /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB7ABB2B7A569F0065FDD7 /* CustomTextFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +61,23 @@
 		50C895112B76695B006EF270 /* Kapde LeloUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Kapde LeloUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50C895152B76695B006EF270 /* Kapde_LeloUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kapde_LeloUITests.swift; sourceTree = "<group>"; };
 		50C895172B76695B006EF270 /* Kapde_LeloUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kapde_LeloUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		50C895282B766BF3006EF270 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		50CB7A9A2B79F6110065FDD7 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		50CB7A9D2B79F63C0065FDD7 /* ConstantStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantStrings.swift; sourceTree = "<group>"; };
+		50CB7A9F2B79F6B40065FDD7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		50CB7AA12B79F6FA0065FDD7 /* KapdeLeloTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KapdeLeloTabView.swift; sourceTree = "<group>"; };
+		50CB7AA32B7A2A3D0065FDD7 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		50CB7AA52B7A2A480065FDD7 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		50CB7AA82B7A537F0065FDD7 /* SFPRODISPLAYTHINITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYTHINITALIC.OTF; sourceTree = "<group>"; };
+		50CB7AA92B7A53800065FDD7 /* SFPRODISPLAYBOLD.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYBOLD.OTF; sourceTree = "<group>"; };
+		50CB7AAA2B7A53800065FDD7 /* SFPRODISPLAYLIGHTITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYLIGHTITALIC.OTF; sourceTree = "<group>"; };
+		50CB7AAB2B7A53800065FDD7 /* SFPRODISPLAYMEDIUM.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYMEDIUM.OTF; sourceTree = "<group>"; };
+		50CB7AAC2B7A53800065FDD7 /* SFPRODISPLAYREGULAR.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYREGULAR.OTF; sourceTree = "<group>"; };
+		50CB7AAD2B7A53800065FDD7 /* SFPRODISPLAYHEAVYITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYHEAVYITALIC.OTF; sourceTree = "<group>"; };
+		50CB7AAE2B7A53800065FDD7 /* SFPRODISPLAYBLACKITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYBLACKITALIC.OTF; sourceTree = "<group>"; };
+		50CB7AAF2B7A53800065FDD7 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYSEMIBOLDITALIC.OTF; sourceTree = "<group>"; };
+		50CB7AB02B7A53800065FDD7 /* SFPRODISPLAYULTRALIGHTITALIC.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYULTRALIGHTITALIC.OTF; sourceTree = "<group>"; };
+		50CB7ABB2B7A569F0065FDD7 /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +128,14 @@
 		50C894F92B766959006EF270 /* Kapde Lelo */ = {
 			isa = PBXGroup;
 			children = (
+				50CB7ABA2B7A568D0065FDD7 /* CustomViews */,
+				50CB7AA72B7A53750065FDD7 /* Fonts */,
+				50CB7A9C2B79F6240065FDD7 /* Constants */,
+				50C895272B766AA8006EF270 /* HelperClasses */,
+				50C895262B766A97006EF270 /* Extensions */,
+				50C895252B766A90006EF270 /* ViewModels */,
+				50C895242B766A89006EF270 /* Views */,
 				50C894FA2B766959006EF270 /* Kapde_LeloApp.swift */,
-				50C894FC2B766959006EF270 /* ContentView.swift */,
 				50C894FE2B76695B006EF270 /* Assets.xcassets */,
 				50C895002B76695B006EF270 /* Preview Content */,
 			);
@@ -125,6 +165,73 @@
 				50C895172B76695B006EF270 /* Kapde_LeloUITestsLaunchTests.swift */,
 			);
 			path = "Kapde LeloUITests";
+			sourceTree = "<group>";
+		};
+		50C895242B766A89006EF270 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50C894FC2B766959006EF270 /* ContentView.swift */,
+				50CB7A9F2B79F6B40065FDD7 /* LoginView.swift */,
+				50CB7AA12B79F6FA0065FDD7 /* KapdeLeloTabView.swift */,
+				50CB7AA32B7A2A3D0065FDD7 /* CreateAccountView.swift */,
+				50CB7AA52B7A2A480065FDD7 /* SignUpView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		50C895252B766A90006EF270 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				50C895282B766BF3006EF270 /* ContentViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		50C895262B766A97006EF270 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		50C895272B766AA8006EF270 /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				50CB7A9A2B79F6110065FDD7 /* AppState.swift */,
+			);
+			path = HelperClasses;
+			sourceTree = "<group>";
+		};
+		50CB7A9C2B79F6240065FDD7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				50CB7A9D2B79F63C0065FDD7 /* ConstantStrings.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		50CB7AA72B7A53750065FDD7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				50CB7AAE2B7A53800065FDD7 /* SFPRODISPLAYBLACKITALIC.OTF */,
+				50CB7AA92B7A53800065FDD7 /* SFPRODISPLAYBOLD.OTF */,
+				50CB7AAD2B7A53800065FDD7 /* SFPRODISPLAYHEAVYITALIC.OTF */,
+				50CB7AAA2B7A53800065FDD7 /* SFPRODISPLAYLIGHTITALIC.OTF */,
+				50CB7AAB2B7A53800065FDD7 /* SFPRODISPLAYMEDIUM.OTF */,
+				50CB7AAC2B7A53800065FDD7 /* SFPRODISPLAYREGULAR.OTF */,
+				50CB7AAF2B7A53800065FDD7 /* SFPRODISPLAYSEMIBOLDITALIC.OTF */,
+				50CB7AA82B7A537F0065FDD7 /* SFPRODISPLAYTHINITALIC.OTF */,
+				50CB7AB02B7A53800065FDD7 /* SFPRODISPLAYULTRALIGHTITALIC.OTF */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		50CB7ABA2B7A568D0065FDD7 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				50CB7ABB2B7A569F0065FDD7 /* CustomTextFieldView.swift */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +338,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50CB7AB42B7A53800065FDD7 /* SFPRODISPLAYMEDIUM.OTF in Resources */,
+				50CB7AB72B7A53800065FDD7 /* SFPRODISPLAYBLACKITALIC.OTF in Resources */,
+				50CB7AB22B7A53800065FDD7 /* SFPRODISPLAYBOLD.OTF in Resources */,
+				50CB7AB12B7A53800065FDD7 /* SFPRODISPLAYTHINITALIC.OTF in Resources */,
+				50CB7AB52B7A53800065FDD7 /* SFPRODISPLAYREGULAR.OTF in Resources */,
+				50CB7AB32B7A53800065FDD7 /* SFPRODISPLAYLIGHTITALIC.OTF in Resources */,
+				50CB7AB92B7A53800065FDD7 /* SFPRODISPLAYULTRALIGHTITALIC.OTF in Resources */,
+				50CB7AB82B7A53800065FDD7 /* SFPRODISPLAYSEMIBOLDITALIC.OTF in Resources */,
+				50CB7AB62B7A53800065FDD7 /* SFPRODISPLAYHEAVYITALIC.OTF in Resources */,
 				50C895022B76695B006EF270 /* Preview Assets.xcassets in Resources */,
 				50C894FF2B76695B006EF270 /* Assets.xcassets in Resources */,
 			);
@@ -257,8 +373,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50CB7AA02B79F6B40065FDD7 /* LoginView.swift in Sources */,
+				50CB7A9E2B79F63C0065FDD7 /* ConstantStrings.swift in Sources */,
 				50C894FD2B766959006EF270 /* ContentView.swift in Sources */,
+				50CB7AA22B79F6FA0065FDD7 /* KapdeLeloTabView.swift in Sources */,
+				50CB7ABC2B7A569F0065FDD7 /* CustomTextFieldView.swift in Sources */,
 				50C894FB2B766959006EF270 /* Kapde_LeloApp.swift in Sources */,
+				50C895292B766BF3006EF270 /* ContentViewModel.swift in Sources */,
+				50CB7AA42B7A2A3D0065FDD7 /* CreateAccountView.swift in Sources */,
+				50CB7AA62B7A2A480065FDD7 /* SignUpView.swift in Sources */,
+				50CB7A9B2B79F6110065FDD7 /* AppState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

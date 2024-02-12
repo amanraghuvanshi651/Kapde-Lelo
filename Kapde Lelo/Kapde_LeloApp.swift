@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct Kapde_LeloApp: App {
+    @StateObject var appState = ApplicationState()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationStack {            
+                ContentView()
+            }
+            .environmentObject(appState)
         }
     }
 }
