@@ -16,13 +16,13 @@ struct CustomTextFieldView: View {
         VStack {
             HStack {
                 Text(fieldTitle)
-                    .font(.custom(SFProDisplayRegular, size: 13))
+                    .font(.custom(SF_PRO_TEXT_REGULAR, size: 13))
                     .foregroundStyle(.gray)
                 Spacer()
             }
             
             TextField("", text: $textfieldText)
-                .font(.custom(SFProDisplayMedium, size: 20))
+                .font(.custom(SF_PRO_TEXT_MEDIUM, size: 20))
                 .frame(height: 50)
             
             VStack {}
@@ -35,5 +35,5 @@ struct CustomTextFieldView: View {
 }
 
 #Preview {
-    CustomTextFieldView(fieldTitle: .constant("username"), isValid: .constant(false), textfieldText: .constant("testing"))
+    CustomTextFieldView(fieldTitle: .constant("username"), isValid: .constant(false), textfieldText: .constant(""))
 }

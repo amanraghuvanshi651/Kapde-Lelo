@@ -16,8 +16,12 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             switch appState.state {
+            case .splash:
+                SplashView()
+            case .onboarding:
+                OnboardingView()
             case .login:
-                SignUpView()
+                CreateAccountView()
             case .tabView:
                 KapdeLeloTabView()
             }

@@ -8,19 +8,23 @@
 import SwiftUI
 
 enum AppState {
+    case splash
+    case onboarding
     case login
     case tabView
 }
 
 class ApplicationState: ObservableObject {
     
-    @Published private(set) var state: AppState = .login
+    @Published private(set) var state: AppState = .splash
     
     init() {
-        if UserDefaults.standard.value(forKey: USER_KEY) != nil && UserDefaults.standard.value(forKey: USER_KEY) as? String != "" {
-            state = .tabView
-        } else {
-            state = .login
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            if UserDefaults.standard.value(forKey: USER_KEY) != nil && UserDefaults.standard.value(forKey: USER_KEY) as? String != "" {
+                self.state = .tabView
+            } else {
+                self.state = UserDefaults.standard.value(forKey: IS_FIRST_TIME) != nil ? .login : .onboarding
+            }
         }
     }
     

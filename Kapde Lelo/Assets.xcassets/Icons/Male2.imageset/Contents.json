@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "portrait-handsome-smiling-stylish-young-man-model-dressed-red-checkered-shirt-fashion-man-posing-removebg.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "portrait-handsome-smiling-stylish-young-man-model-dressed-red-checkered-shirt-fashion-man-posing-removebg 1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "portrait-handsome-smiling-stylish-young-man-model-dressed-red-checkered-shirt-fashion-man-posing-removebg 2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
