@@ -8,24 +8,28 @@
 import SwiftUI
 
 struct BrandOptionView: View {
-    @Binding var brandName: String
-    @Binding var image: String
+    @Binding var brand: BrandModel
+//    @Binding var brandName: String
+//    @Binding var image: String
     
     var body: some View {
         HStack(spacing: 10) {
-            Image(image)
+            Image(brand.image)
                 .resizable()
                 .frame(width: 40, height: 40)
             
-            Text(brandName)
+            Text(brand.name)
                 .font(.custom(SF_PRO_TEXT_MEDIUM, fixedSize: 20))
         }
+        .onTapGesture {
+            brand.isSelected.toggle()
+        }
         .padding(10)
-        .background(Color(BACKGROUND_HIGHLIGHT_COLOR, bundle: nil))
+        .background(brand.isSelected ? Color(APP_MAIN_COLOR, bundle: nil) : Color(BACKGROUND_HIGHLIGHT_COLOR, bundle: nil))
         .clipShape(.rect(cornerRadius: 10))
     }
 }
 
 #Preview {
-    BrandOptionView(brandName: .constant("Adidas"), image: .constant("Adidas"))
+    BrandOptionView(brand: .constant(BrandModel(name: "Adidas", image: "Adidas", isSelected: false)))
 }

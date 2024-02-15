@@ -39,6 +39,11 @@
 		50CB7AA42B7A2A3D0065FDD7 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB7AA32B7A2A3D0065FDD7 /* CreateAccountView.swift */; };
 		50CB7AA62B7A2A480065FDD7 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB7AA52B7A2A480065FDD7 /* SignUpView.swift */; };
 		50CB7ABC2B7A569F0065FDD7 /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB7ABB2B7A569F0065FDD7 /* CustomTextFieldView.swift */; };
+		50F94B6D2B7E47C60079E0C8 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F94B6C2B7E47C60079E0C8 /* SideMenu.swift */; };
+		50F94B6F2B7E48050079E0C8 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F94B6E2B7E48050079E0C8 /* SideMenuView.swift */; };
+		50F94B722B7E482A0079E0C8 /* SideMenuRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F94B712B7E482A0079E0C8 /* SideMenuRowType.swift */; };
+		50FFF3022B7E0D400018E3A3 /* BrandModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FFF3012B7E0D400018E3A3 /* BrandModel.swift */; };
+		50FFF3042B7E1FFA0018E3A3 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FFF3032B7E1FFA0018E3A3 /* ProductModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +100,11 @@
 		50CB7AA32B7A2A3D0065FDD7 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		50CB7AA52B7A2A480065FDD7 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		50CB7ABB2B7A569F0065FDD7 /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
+		50F94B6C2B7E47C60079E0C8 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		50F94B6E2B7E48050079E0C8 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		50F94B712B7E482A0079E0C8 /* SideMenuRowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowType.swift; sourceTree = "<group>"; };
+		50FFF3012B7E0D400018E3A3 /* BrandModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandModel.swift; sourceTree = "<group>"; };
+		50FFF3032B7E1FFA0018E3A3 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +175,8 @@
 		50C894F92B766959006EF270 /* Kapde Lelo */ = {
 			isa = PBXGroup;
 			children = (
+				50F94B702B7E481D0079E0C8 /* Enums */,
+				50FFF3002B7E0BD40018E3A3 /* Models */,
 				50BCAA9A2B7BB0A5004088C8 /* Kapde-Lelo-Info.plist */,
 				50CB7AA72B7A53750065FDD7 /* Fonts */,
 				50CB7A9C2B79F6240065FDD7 /* Constants */,
@@ -208,6 +220,7 @@
 		50C895242B766A89006EF270 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				50F94B732B7E483B0079E0C8 /* SideMenu */,
 				50C369FB2B7C9C6700A7EEDD /* TabView */,
 				50C894FC2B766959006EF270 /* ContentView.swift */,
 				50CB7A9F2B79F6B40065FDD7 /* LoginView.swift */,
@@ -274,6 +287,32 @@
 				50C36A082B7CEB4D00A7EEDD /* BrandOptionView.swift */,
 			);
 			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		50F94B702B7E481D0079E0C8 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				50F94B712B7E482A0079E0C8 /* SideMenuRowType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		50F94B732B7E483B0079E0C8 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				50F94B6C2B7E47C60079E0C8 /* SideMenu.swift */,
+				50F94B6E2B7E48050079E0C8 /* SideMenuView.swift */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		50FFF3002B7E0BD40018E3A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50FFF3012B7E0D400018E3A3 /* BrandModel.swift */,
+				50FFF3032B7E1FFA0018E3A3 /* ProductModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -412,11 +451,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50F94B722B7E482A0079E0C8 /* SideMenuRowType.swift in Sources */,
 				50CB7AA02B79F6B40065FDD7 /* LoginView.swift in Sources */,
+				50FFF3022B7E0D400018E3A3 /* BrandModel.swift in Sources */,
 				50C36A042B7C9E1E00A7EEDD /* MyCardsView.swift in Sources */,
+				50F94B6D2B7E47C60079E0C8 /* SideMenu.swift in Sources */,
 				50BCAA792B7B4D03004088C8 /* ForgotPasswordView.swift in Sources */,
 				50C36A002B7C9CD000A7EEDD /* WishlistView.swift in Sources */,
 				50BCAA812B7B7B38004088C8 /* SplashView.swift in Sources */,
+				50F94B6F2B7E48050079E0C8 /* SideMenuView.swift in Sources */,
 				50CB7A9E2B79F63C0065FDD7 /* ConstantStrings.swift in Sources */,
 				50C894FD2B766959006EF270 /* ContentView.swift in Sources */,
 				50CB7AA22B79F6FA0065FDD7 /* KapdeLeloTabView.swift in Sources */,
@@ -429,6 +472,7 @@
 				50C36A072B7CA31200A7EEDD /* ProductCardView.swift in Sources */,
 				50CB7AA62B7A2A480065FDD7 /* SignUpView.swift in Sources */,
 				50C369FE2B7C9CC200A7EEDD /* HomeView.swift in Sources */,
+				50FFF3042B7E1FFA0018E3A3 /* ProductModel.swift in Sources */,
 				50C36A092B7CEB4D00A7EEDD /* BrandOptionView.swift in Sources */,
 				50CB7A9B2B79F6110065FDD7 /* AppState.swift in Sources */,
 				50BCAA7F2B7B7B2E004088C8 /* OnboardingView.swift in Sources */,
