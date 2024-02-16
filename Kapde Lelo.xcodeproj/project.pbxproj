@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50B8C8DD2B7F9F8400395447 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B8C8DC2B7F9F8400395447 /* LoaderView.swift */; };
+		50B8C8E02B7F9FC300395447 /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 50B8C8DF2B7F9FC300395447 /* loader.gif */; };
+		50B8C8E22B7FA0C500395447 /* CustomLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B8C8E12B7FA0C500395447 /* CustomLoaderView.swift */; };
+		50B8C8E42B7FA93B00395447 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B8C8E32B7FA93B00395447 /* CartView.swift */; };
+		50B8C8E62B7FACEE00395447 /* CartProductView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B8C8E52B7FACEE00395447 /* CartProductView.swift */; };
 		50BCAA792B7B4D03004088C8 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BCAA782B7B4D03004088C8 /* ForgotPasswordView.swift */; };
 		50BCAA7B2B7B4F69004088C8 /* CodeVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BCAA7A2B7B4F69004088C8 /* CodeVerificationView.swift */; };
 		50BCAA7D2B7B7A10004088C8 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50BCAA7C2B7B7A10004088C8 /* ResetPasswordView.swift */; };
@@ -64,6 +69,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50B8C8DC2B7F9F8400395447 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		50B8C8DF2B7F9FC300395447 /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader.gif; sourceTree = "<group>"; };
+		50B8C8E12B7FA0C500395447 /* CustomLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoaderView.swift; sourceTree = "<group>"; };
+		50B8C8E32B7FA93B00395447 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		50B8C8E52B7FACEE00395447 /* CartProductView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartProductView.swift; sourceTree = "<group>"; };
 		50BCAA782B7B4D03004088C8 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		50BCAA7A2B7B4F69004088C8 /* CodeVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeVerificationView.swift; sourceTree = "<group>"; };
 		50BCAA7C2B7B7A10004088C8 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
@@ -132,6 +142,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		50B8C8DE2B7F9FB500395447 /* Gifs */ = {
+			isa = PBXGroup;
+			children = (
+				50B8C8DF2B7F9FC300395447 /* loader.gif */,
+			);
+			path = Gifs;
+			sourceTree = "<group>";
+		};
 		50C369FB2B7C9C6700A7EEDD /* TabView */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +193,7 @@
 		50C894F92B766959006EF270 /* Kapde Lelo */ = {
 			isa = PBXGroup;
 			children = (
+				50B8C8DE2B7F9FB500395447 /* Gifs */,
 				50F94B702B7E481D0079E0C8 /* Enums */,
 				50FFF3002B7E0BD40018E3A3 /* Models */,
 				50BCAA9A2B7BB0A5004088C8 /* Kapde-Lelo-Info.plist */,
@@ -231,6 +250,7 @@
 				50BCAA7C2B7B7A10004088C8 /* ResetPasswordView.swift */,
 				50BCAA7E2B7B7B2E004088C8 /* OnboardingView.swift */,
 				50BCAA802B7B7B38004088C8 /* SplashView.swift */,
+				50B8C8E32B7FA93B00395447 /* CartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -285,6 +305,9 @@
 				50CB7ABB2B7A569F0065FDD7 /* CustomTextFieldView.swift */,
 				50C36A062B7CA31200A7EEDD /* ProductCardView.swift */,
 				50C36A082B7CEB4D00A7EEDD /* BrandOptionView.swift */,
+				50B8C8DC2B7F9F8400395447 /* LoaderView.swift */,
+				50B8C8E12B7FA0C500395447 /* CustomLoaderView.swift */,
+				50B8C8E52B7FACEE00395447 /* CartProductView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -427,6 +450,7 @@
 				50BCAAA12B7BB4A9004088C8 /* sf-pro-text-light.ttf in Resources */,
 				50C894FF2B76695B006EF270 /* Assets.xcassets in Resources */,
 				50BCAAA52B7BB4A9004088C8 /* sf-pro-text-medium.ttf in Resources */,
+				50B8C8E02B7F9FC300395447 /* loader.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +485,8 @@
 				50BCAA812B7B7B38004088C8 /* SplashView.swift in Sources */,
 				50F94B6F2B7E48050079E0C8 /* SideMenuView.swift in Sources */,
 				50CB7A9E2B79F63C0065FDD7 /* ConstantStrings.swift in Sources */,
+				50B8C8E42B7FA93B00395447 /* CartView.swift in Sources */,
+				50B8C8E22B7FA0C500395447 /* CustomLoaderView.swift in Sources */,
 				50C894FD2B766959006EF270 /* ContentView.swift in Sources */,
 				50CB7AA22B79F6FA0065FDD7 /* KapdeLeloTabView.swift in Sources */,
 				50CB7ABC2B7A569F0065FDD7 /* CustomTextFieldView.swift in Sources */,
@@ -468,12 +494,14 @@
 				50BCAA7B2B7B4F69004088C8 /* CodeVerificationView.swift in Sources */,
 				50C894FB2B766959006EF270 /* Kapde_LeloApp.swift in Sources */,
 				50C895292B766BF3006EF270 /* ContentViewModel.swift in Sources */,
+				50B8C8DD2B7F9F8400395447 /* LoaderView.swift in Sources */,
 				50CB7AA42B7A2A3D0065FDD7 /* CreateAccountView.swift in Sources */,
 				50C36A072B7CA31200A7EEDD /* ProductCardView.swift in Sources */,
 				50CB7AA62B7A2A480065FDD7 /* SignUpView.swift in Sources */,
 				50C369FE2B7C9CC200A7EEDD /* HomeView.swift in Sources */,
 				50FFF3042B7E1FFA0018E3A3 /* ProductModel.swift in Sources */,
 				50C36A092B7CEB4D00A7EEDD /* BrandOptionView.swift in Sources */,
+				50B8C8E62B7FACEE00395447 /* CartProductView.swift in Sources */,
 				50CB7A9B2B79F6110065FDD7 /* AppState.swift in Sources */,
 				50BCAA7F2B7B7B2E004088C8 /* OnboardingView.swift in Sources */,
 				50C36A022B7C9CDF00A7EEDD /* OrdersView.swift in Sources */,

@@ -65,9 +65,18 @@ struct SideMenuView: View {
                 )
             }
             .frame(maxHeight: .infinity)
-            .background(.cyan)
+//            Spacer()
             
-            Spacer()
+            Button(action: {
+                withAnimation {
+                    presentSideMenu.toggle()
+                }
+            }, label: {
+                VStack {
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            })
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
         .background(.clear)
         .frame(maxWidth: .infinity, maxHeight: .infinity)

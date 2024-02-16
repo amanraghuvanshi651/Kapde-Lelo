@@ -31,16 +31,14 @@ struct HomeView: View {
         ProductModel(name: "Training Top Nike Sport Clash", category: "shirt", images: "Male2", price: "74", isLiked: false),
         ProductModel(name: "Trail Running Jacket Nike Windrunner", category: "shirt", images: "Male2", price: "425", isLiked: false)
     ]
+    
     @State var brands = [
         BrandModel(name: "Adidas", image: "Adidas", isSelected: false),
         BrandModel(name: "Nike", image: "Nike", isSelected: false),
         BrandModel(name: "Fila", image: "Fila", isSelected: false),
         BrandModel(name: "Puma", image: "Puma", isSelected: false)
     ]
-    
-    @State var presentSideMenu = false
-    @State var selectedSideMenuTab = 0
-    @State var isRotated = false
+    @State var showLoader = false
     
     var body: some View {
         ZStack {
@@ -120,45 +118,16 @@ struct HomeView: View {
             .scrollIndicators(.hidden)
             .contentMargins(.top, 50, for: .scrollContent)
             
-            if presentSideMenu {
-                VStack {
-                }
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(.ultraThinMaterial)
-                .ignoresSafeArea()
+            if showLoader {
+                CustomLoaderView()
             }
-            
-            SideMenu(isShowing: $presentSideMenu, content: AnyView(SideMenuView(selectedSideMenuTab: $selectedSideMenuTab, presentSideMenu: $presentSideMenu)))
-            
-            VStack {
-                HStack {
-                    Button {
-                        withAnimation {
-                            presentSideMenu.toggle()
-                            isRotated.toggle()
-                        }
-                    } label: {
-                        Image(presentSideMenu ? "cross" : "Menu")
-                            .resizable()
-                            .frame(width: 50, height: 50)
-                    }
-                    .rotationEffect(.degrees(presentSideMenu ? -90 : 0))
-                    
-                    Spacer()
-                    
-                    if !presentSideMenu {
-                        Button {
-                        } label: {
-                            Image("Cart")
-                                .resizable()
-                                .frame(width: 50, height: 50)
-                        }
-                    }
+        }
+        .onAppear {
+            withAnimation {
+                self.showLoader = true
+                DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                    self.showLoader = false
                 }
-                .padding(.horizontal, 20)
-                .padding(.bottom, 0)
-                
-                Spacer()
             }
         }
     }

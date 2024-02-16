@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ProductModel {
+struct ProductModel: Equatable {
     var id = UUID().uuidString
     var name: String
     var category: String

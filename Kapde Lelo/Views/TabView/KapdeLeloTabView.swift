@@ -8,39 +8,20 @@
 import SwiftUI
 
 struct KapdeLeloTabView: View {
+    @State var isCarViewPresented = false
+    @State var presentSideMenu = false
+    @State var selectedSideMenuTab = 0
+    
     var body: some View {
-//        VStack {
-//            HStack {
-//                Button {
-//                } label: {
-//                    Image("Menu")
-//                        .resizable()
-//                        .frame(width: 50, height: 50)
-//                }
-//
-//                Spacer()
-//                
-//                Button {
-//                } label: {
-//                    Image("Cart")
-//                        .resizable()
-//                        .frame(width: 50, height: 50)
-//                }
-//            }
-////            .padding(.top, 10)
-//            .padding(.horizontal, 20)
-            
-            
+        ZStack {
             TabView {
                 HomeView()
-                .tabItem {
-                    Text("Home")
-                    Image("Home")
-                }
+                    .tabItem {
+                        Text("Home")
+                        Image("Home")
+                    }
                 
-                HStack {
-                    Text("Wishlist")
-                }
+                WishlistView()
                 .tabItem {
                     Text("Wishlist")
                     Image("Heart")
@@ -64,7 +45,51 @@ struct KapdeLeloTabView: View {
             }
             .tint(Color(APP_MAIN_COLOR, bundle: nil))
             .navigationBarBackButtonHidden(true)
-//        }
+            
+            if presentSideMenu {
+                VStack {
+                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(.ultraThinMaterial)
+                .ignoresSafeArea()
+            }
+            
+            SideMenu(isShowing: $presentSideMenu, content: AnyView(SideMenuView(selectedSideMenuTab: $selectedSideMenuTab, presentSideMenu: $presentSideMenu)))
+            
+            VStack {
+                HStack {
+                    Button {
+                        withAnimation {
+                            presentSideMenu.toggle()
+                        }
+                    } label: {
+                        Image(presentSideMenu ? "cross" : "Menu")
+                            .resizable()
+                            .frame(width: 50, height: 50)
+                    }
+                    .rotationEffect(.degrees(presentSideMenu ? -90 : 0))
+                    
+                    Spacer()
+                    
+                    if !presentSideMenu {
+                        Button {
+                            isCarViewPresented.toggle()
+                        } label: {
+                            Image("Cart")
+                                .resizable()
+                                .frame(width: 50, height: 50)
+                        }
+                        .navigationDestination(isPresented: $isCarViewPresented) {
+                            CartView()
+                        }
+                    }
+                }
+                .padding(.horizontal, 20)
+                .padding(.bottom, 0)
+                
+                Spacer()
+            }
+        }
     }
 }
 
