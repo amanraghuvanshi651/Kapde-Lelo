@@ -2,7 +2,7 @@
 //  HomeView.swift
 //  Kapde Lelo
 //
-//  Created by macmini50 on 14/02/24.
+//  Created by Aman Raghuvanshi on 14/02/24.
 //
 
 import SwiftUI
@@ -15,6 +15,8 @@ enum Brand {
 }
 
 struct HomeView: View {
+    @EnvironmentObject var appState: ApplicationState
+    
     @State var searchText = ""
     
     @State var products = [
@@ -54,9 +56,9 @@ struct HomeView: View {
                             .foregroundStyle(.gray)
                             .frame(maxWidth: .infinity, alignment: .leading)
                     }
-                    .padding(.vertical, 20)
                 }
                 .padding(.horizontal, 20)
+                .padding(.bottom, 20)
                 
                 //MARK: - Search section
                 Section {
@@ -116,7 +118,7 @@ struct HomeView: View {
                 .padding(.horizontal, 20)
             }
             .scrollIndicators(.hidden)
-            .contentMargins(.top, 50, for: .scrollContent)
+            .contentMargins(.top, 70, for: .scrollContent)
             
             if showLoader {
                 CustomLoaderView()

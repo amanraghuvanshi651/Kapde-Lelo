@@ -2,7 +2,7 @@
 //  WishlistView.swift
 //  Kapde Lelo
 //
-//  Created by macmini50 on 14/02/24.
+//  Created by Aman Raghuvanshi on 14/02/24.
 //
 
 import SwiftUI
@@ -40,7 +40,6 @@ struct WishlistView: View {
                     }
                     .padding(.horizontal, 20)
                     .padding(.bottom, 10)
-                    .padding(.top, 20)
                 }
                 //MARK: - Product section
                 Section {
@@ -60,7 +59,7 @@ struct WishlistView: View {
                 }
             })
             .scrollIndicators(.hidden)
-            .contentMargins(.top, 50, for: .scrollContent)
+            .contentMargins(.top, 70, for: .scrollContent)
         }
     }
 }

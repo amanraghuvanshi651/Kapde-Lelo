@@ -2,7 +2,7 @@
 //  SideMenuView.swift
 //  Kapde Lelo
 //
-//  Created by macmini50 on 15/02/24.
+//  Created by Aman Raghuvanshi on 15/02/24.
 //
 
 import SwiftUI

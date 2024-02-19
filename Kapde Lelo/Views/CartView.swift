@@ -2,28 +2,21 @@
 //  CartView.swift
 //  Kapde Lelo
 //
-//  Created by macmini50 on 16/02/24.
+//  Created by Aman Raghuvanshi on 16/02/24.
 //
 
 import SwiftUI
 
 struct CartView: View {
     @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var appState: ApplicationState
     
     @State var products = [
         ProductModel(name: "Nike Sportswear Club Fleece", category: "shirt", images: "Male2", price: "85", isLiked: false),
         ProductModel(name: "Trail Running Jacket Nike Windrunner", category: "shirt", images: "Male2", price: "124", isLiked: false),
         ProductModel(name: "Training Top Nike Sport Clash", category: "shirt", images: "Male2", price: "52", isLiked: false)
-//        ProductModel(name: "Trail Running Jacket Nike Windrunner", category: "shirt", images: "Male2", price: "465", isLiked: false),
-//        ProductModel(name: "Nike Sportswear Club Fleece", category: "shirt", images: "Male2", price: "242", isLiked: false),
-//        ProductModel(name: "Trail Running Jacket Nike Windrunner", category: "shirt", images: "Male2", price: "74", isLiked: false),
-//        ProductModel(name: "Training Top Nike Sport Clash", category: "shirt", images: "Male2", price: "81", isLiked: false),
-//        ProductModel(name: "Trail Running Jacket Nike Windrunner", category: "shirt", images: "Male2", price: "96", isLiked: false),
-//        ProductModel(name: "Nike Sportswear Club Fleece", category: "shirt", images: "Male2", price: "42", isLiked: false),
-//        ProductModel(name: "Trail Running Jacket Nike Windrunner", category: "shirt", images: "Male2", price: "36", isLiked: false),
-//        ProductModel(name: "Training Top Nike Sport Clash", category: "shirt", images: "Male2", price: "74", isLiked: false),
-//        ProductModel(name: "Trail Running Jacket Nike Windrunner", category: "shirt", images: "Male2", price: "425", isLiked: false)
     ]
+    @State var isPaymentStatusViewPresented = false
     
     var body: some View {
         VStack {
@@ -65,14 +58,16 @@ struct CartView: View {
                             
                             Button {
                             } label: {
-                                Image(systemName: "arrowshape.forward.fill")
+                                Image("rightArrow")
                                     .resizable()
                                     .frame(width: 20, height: 20)
                             }
                             .foregroundStyle(.black)
                         }
+                        
+                        AddressView()
                     }
-                    .padding(.horizontal, 20)
+                    .padding(20)
                 }
                 
                 //MARK: - Payment
@@ -85,15 +80,86 @@ struct CartView: View {
                             
                             Button {
                             } label: {
-                                Image(systemName: "arrowshape.forward.fill")
+                                Image("rightArrow")
                                     .resizable()
                                     .frame(width: 20, height: 20)
                             }
                             .foregroundStyle(.black)
-
+                        }
+                        
+                        PaymentCardView(cardType: .constant(.rupay))
+                    }
+                    .padding(.horizontal, 20)
+                    .padding(.bottom, 20)
+                }
+                
+                //MARK: - Total
+                Section {
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text("Order Info")
+                            .font(.custom(SF_PRO_TEXT_MEDIUM, size: 20))
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.bottom, 5)
+                        
+                        HStack {
+                            Text("Subtotal")
+                                .font(.custom(SF_PRO_TEXT_MEDIUM, size: 17))
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .foregroundStyle(.gray)
+                            
+                            Spacer()
+                            
+                            Text("$110")
+                                .font(.custom(SF_PRO_TEXT_MEDIUM, size: 20))
+                                .frame(maxWidth: .infinity, alignment: .trailing)
+                        }
+                        
+                        HStack {
+                            Text("Shipping cost")
+                                .font(.custom(SF_PRO_TEXT_MEDIUM, size: 17))
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .foregroundStyle(.gray)
+                            
+                            Spacer()
+                            
+                            Text("$10")
+                                .font(.custom(SF_PRO_TEXT_MEDIUM, size: 20))
+                                .frame(maxWidth: .infinity, alignment: .trailing)
+                        }
+                        
+                        HStack {
+                            Text("Total")
+                                .font(.custom(SF_PRO_TEXT_MEDIUM, size: 17))
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .foregroundStyle(.gray)
+                            Spacer()
+                            
+                            Text("$120")
+                                .font(.custom(SF_PRO_TEXT_MEDIUM, size: 20))
+                                .frame(maxWidth: .infinity, alignment: .trailing)
                         }
                     }
                     .padding(.horizontal, 20)
+                    .padding(.bottom, 20)
+                }
+                
+                Section {
+                    Button(action: {
+                        isPaymentStatusViewPresented = true
+                    }, label: {
+                        Text("Checkout")
+                            .foregroundStyle(.white)
+                            .frame(maxWidth: .infinity, maxHeight: 20)
+                    })
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color(APP_MAIN_COLOR, bundle: nil))
+                    .clipShape(.rect(cornerRadius: 10))
+                    .padding(.horizontal, 20)
+                    .padding(.bottom, 15)
+                    .navigationDestination(isPresented: $isPaymentStatusViewPresented) {
+                        PaymentStatusView()
+                    }
                 }
             }
             .contentMargins(.top, 10)

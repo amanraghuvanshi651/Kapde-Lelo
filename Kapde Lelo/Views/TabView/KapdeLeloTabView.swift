@@ -2,12 +2,14 @@
 //  KapdeLeloTabView.swift
 //  Kapde Lelo
 //
-//  Created by macmini50 on 12/02/24.
+//  Created by Aman Raghuvanshi on 12/02/24.
 //
 
 import SwiftUI
 
 struct KapdeLeloTabView: View {
+    @EnvironmentObject var appState: ApplicationState
+    
     @State var isCarViewPresented = false
     @State var presentSideMenu = false
     @State var selectedSideMenuTab = 0
@@ -35,9 +37,7 @@ struct KapdeLeloTabView: View {
                     Image("Bag")
                 }
                 
-                HStack {
-                    Text("My Cards")
-                }
+                MyCardsView()
                 .tabItem {
                     Text("My Cards")
                     Image("Wallet")

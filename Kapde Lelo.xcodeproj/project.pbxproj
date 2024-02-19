@@ -44,6 +44,10 @@
 		50CB7AA42B7A2A3D0065FDD7 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB7AA32B7A2A3D0065FDD7 /* CreateAccountView.swift */; };
 		50CB7AA62B7A2A480065FDD7 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB7AA52B7A2A480065FDD7 /* SignUpView.swift */; };
 		50CB7ABC2B7A569F0065FDD7 /* CustomTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CB7ABB2B7A569F0065FDD7 /* CustomTextFieldView.swift */; };
+		50CBCDF42B8349470098BCD6 /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CBCDF32B8349470098BCD6 /* AddressView.swift */; };
+		50CBCDF62B836D4D0098BCD6 /* PaymentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CBCDF52B836D4D0098BCD6 /* PaymentCardView.swift */; };
+		50CBCDF82B836E730098BCD6 /* CardProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CBCDF72B836E730098BCD6 /* CardProvider.swift */; };
+		50CBCDFA2B83798B0098BCD6 /* PaymentStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CBCDF92B83798B0098BCD6 /* PaymentStatusView.swift */; };
 		50F94B6D2B7E47C60079E0C8 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F94B6C2B7E47C60079E0C8 /* SideMenu.swift */; };
 		50F94B6F2B7E48050079E0C8 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F94B6E2B7E48050079E0C8 /* SideMenuView.swift */; };
 		50F94B722B7E482A0079E0C8 /* SideMenuRowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F94B712B7E482A0079E0C8 /* SideMenuRowType.swift */; };
@@ -110,6 +114,10 @@
 		50CB7AA32B7A2A3D0065FDD7 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 		50CB7AA52B7A2A480065FDD7 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		50CB7ABB2B7A569F0065FDD7 /* CustomTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldView.swift; sourceTree = "<group>"; };
+		50CBCDF32B8349470098BCD6 /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		50CBCDF52B836D4D0098BCD6 /* PaymentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentCardView.swift; sourceTree = "<group>"; };
+		50CBCDF72B836E730098BCD6 /* CardProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardProvider.swift; sourceTree = "<group>"; };
+		50CBCDF92B83798B0098BCD6 /* PaymentStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentStatusView.swift; sourceTree = "<group>"; };
 		50F94B6C2B7E47C60079E0C8 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
 		50F94B6E2B7E48050079E0C8 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		50F94B712B7E482A0079E0C8 /* SideMenuRowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowType.swift; sourceTree = "<group>"; };
@@ -251,6 +259,7 @@
 				50BCAA7E2B7B7B2E004088C8 /* OnboardingView.swift */,
 				50BCAA802B7B7B38004088C8 /* SplashView.swift */,
 				50B8C8E32B7FA93B00395447 /* CartView.swift */,
+				50CBCDF92B83798B0098BCD6 /* PaymentStatusView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -308,6 +317,8 @@
 				50B8C8DC2B7F9F8400395447 /* LoaderView.swift */,
 				50B8C8E12B7FA0C500395447 /* CustomLoaderView.swift */,
 				50B8C8E52B7FACEE00395447 /* CartProductView.swift */,
+				50CBCDF32B8349470098BCD6 /* AddressView.swift */,
+				50CBCDF52B836D4D0098BCD6 /* PaymentCardView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -316,6 +327,7 @@
 			isa = PBXGroup;
 			children = (
 				50F94B712B7E482A0079E0C8 /* SideMenuRowType.swift */,
+				50CBCDF72B836E730098BCD6 /* CardProvider.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -478,9 +490,11 @@
 				50F94B722B7E482A0079E0C8 /* SideMenuRowType.swift in Sources */,
 				50CB7AA02B79F6B40065FDD7 /* LoginView.swift in Sources */,
 				50FFF3022B7E0D400018E3A3 /* BrandModel.swift in Sources */,
+				50CBCDF62B836D4D0098BCD6 /* PaymentCardView.swift in Sources */,
 				50C36A042B7C9E1E00A7EEDD /* MyCardsView.swift in Sources */,
 				50F94B6D2B7E47C60079E0C8 /* SideMenu.swift in Sources */,
 				50BCAA792B7B4D03004088C8 /* ForgotPasswordView.swift in Sources */,
+				50CBCDF42B8349470098BCD6 /* AddressView.swift in Sources */,
 				50C36A002B7C9CD000A7EEDD /* WishlistView.swift in Sources */,
 				50BCAA812B7B7B38004088C8 /* SplashView.swift in Sources */,
 				50F94B6F2B7E48050079E0C8 /* SideMenuView.swift in Sources */,
@@ -489,6 +503,8 @@
 				50B8C8E22B7FA0C500395447 /* CustomLoaderView.swift in Sources */,
 				50C894FD2B766959006EF270 /* ContentView.swift in Sources */,
 				50CB7AA22B79F6FA0065FDD7 /* KapdeLeloTabView.swift in Sources */,
+				50CBCDF82B836E730098BCD6 /* CardProvider.swift in Sources */,
+				50CBCDFA2B83798B0098BCD6 /* PaymentStatusView.swift in Sources */,
 				50CB7ABC2B7A569F0065FDD7 /* CustomTextFieldView.swift in Sources */,
 				50BCAA7D2B7B7A10004088C8 /* ResetPasswordView.swift in Sources */,
 				50BCAA7B2B7B4F69004088C8 /* CodeVerificationView.swift in Sources */,

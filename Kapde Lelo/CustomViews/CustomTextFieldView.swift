@@ -2,7 +2,7 @@
 //  SwiftUIView.swift
 //  Kapde Lelo
 //
-//  Created by macmini50 on 12/02/24.
+//  Created by Aman Raghuvanshi on 12/02/24.
 //
 
 import SwiftUI
