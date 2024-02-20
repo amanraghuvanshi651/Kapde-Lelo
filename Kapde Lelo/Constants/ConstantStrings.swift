@@ -14,12 +14,13 @@ let IS_FIRST_TIME = "isFirstTime"
 
 //MARK: - Font's
 
-let SF_PRO_TEXT_BOLD = "sf-pro-text-bold"
-let SF_PRO_TEXT_HEAVY = "sf-pro-text-heavy"
-let SF_PRO_TEXT_LIGHT = "sf-pro-text-light"
-let SF_PRO_TEXT_MEDIUM = "sf-pro-text-medium"
-let SF_PRO_TEXT_REGULAR = "sf-pro-text-regular"
-let SF_PRO_TEXT_SEMIBOLD = "sf-pro-text-semibold"
+let SF_PRO_TEXT_BOLD = "Montserrat-Bold"
+let SF_PRO_TEXT_BLACK = "SF-Pro-Display-Black"
+let SF_PRO_TEXT_HEAVY = "SF-Pro-Display-Heavy"
+let SF_PRO_TEXT_ULTRALIGHT = "SF-Pro-Display-Ultralight"
+let SF_PRO_TEXT_MEDIUM = "SF-Pro-Display-Medium"
+let SF_PRO_TEXT_REGULAR = "Montserrat-Regular"
+let SF_PRO_TEXT_SEMIBOLD = "SF-Pro-Display-Semibold"
 
 //MARK: - Color's
 let APP_MAIN_COLOR = "AppMainColor"

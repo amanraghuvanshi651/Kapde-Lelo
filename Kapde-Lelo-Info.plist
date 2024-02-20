@@ -4,12 +4,16 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>sf-pro-text-bold.ttf</string>
-		<string>sf-pro-text-heavy.ttf</string>
-		<string>sf-pro-text-light.ttf</string>
-		<string>sf-pro-text-medium.ttf</string>
-		<string>sf-pro-text-regular.ttf</string>
-		<string>sf-pro-text-semibold.ttf</string>
+		<string>SF-Pro-Display-Black.ttf</string>
+		<string>SF-Pro-Display-Bold.ttf</string>
+		<string>SF-Pro-Display-Heavy.ttf</string>
+		<string>SF-Pro-Display-Medium.ttf</string>
+		<string>SF-Pro-Display-Regular.ttf</string>
+		<string>SF-Pro-Display-Semibold.ttf</string>
+		<string>SF-Pro-Display-Thin.ttf</string>
+		<string>SF-Pro-Display-Ultralight.ttf</string>
+		<string>Montserrat-Bold.ttf</string>
+		<string>Montserrat-Regular.ttf</string>
 	</array>
 </dict>
 </plist>
