@@ -53,12 +53,7 @@ struct SignUpView: View {
                     .foregroundStyle(.white)
                     .frame(maxWidth: .infinity, maxHeight: 20)
             })
-            .padding()
-            .frame(maxWidth: .infinity)
-            .background(Color(APP_MAIN_COLOR, bundle: nil))
-            .clipShape(.rect(cornerRadius: 10))
-            .padding(.horizontal, 20)
-            .padding(.bottom, 15)
+            .modifier(AppButtonBackground())
             .navigationDestination(isPresented: $isCodeVerificationViewPresented) {
                 CodeVerificationView()
             }
