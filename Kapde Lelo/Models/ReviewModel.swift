@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ReviewModel {
+struct ReviewModel: Identifiable {
     var id = UUID().uuidString
     var name: String
     var date: Date

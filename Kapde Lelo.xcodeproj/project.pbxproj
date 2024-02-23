@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		504452B32B88D7FA001C2833 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504452B22B88D7FA001C2833 /* WidgetKit.framework */; };
+		504452B52B88D7FA001C2833 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 504452B42B88D7FA001C2833 /* SwiftUI.framework */; };
+		504452B82B88D7FA001C2833 /* KapdeLeloLiveActivityBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504452B72B88D7FA001C2833 /* KapdeLeloLiveActivityBundle.swift */; };
+		504452BA2B88D7FA001C2833 /* KapdeLeloLiveActivityLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504452B92B88D7FA001C2833 /* KapdeLeloLiveActivityLiveActivity.swift */; };
+		504452BC2B88D7FA001C2833 /* KapdeLeloLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504452BB2B88D7FA001C2833 /* KapdeLeloLiveActivity.swift */; };
+		504452BE2B88D7FA001C2833 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504452BD2B88D7FA001C2833 /* AppIntent.swift */; };
+		504452C02B88D7FC001C2833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504452BF2B88D7FC001C2833 /* Assets.xcassets */; };
+		504452C42B88D7FC001C2833 /* KapdeLeloLiveActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 504452B02B88D7FA001C2833 /* KapdeLeloLiveActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5088C52A2B84C1E8001030C1 /* SF-Pro-Display-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5088C5222B84C1E8001030C1 /* SF-Pro-Display-Semibold.ttf */; };
 		5088C52B2B84C1E8001030C1 /* SF-Pro-Display-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5088C5232B84C1E8001030C1 /* SF-Pro-Display-Heavy.ttf */; };
 		5088C52C2B84C1E8001030C1 /* SF-Pro-Display-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5088C5242B84C1E8001030C1 /* SF-Pro-Display-Regular.ttf */; };
@@ -17,6 +25,7 @@
 		5088C5312B84C1E8001030C1 /* SF-Pro-Display-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5088C5292B84C1E8001030C1 /* SF-Pro-Display-Thin.ttf */; };
 		5088C5342B84C334001030C1 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5088C5322B84C334001030C1 /* Montserrat-Regular.ttf */; };
 		5088C5352B84C334001030C1 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5088C5332B84C334001030C1 /* Montserrat-Bold.ttf */; };
+		50A3944B2B8725DE00A5925A /* ManBlackBusinessSuit.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 50A3944A2B8725DE00A5925A /* ManBlackBusinessSuit.usdz */; };
 		50B8C8DD2B7F9F8400395447 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B8C8DC2B7F9F8400395447 /* LoaderView.swift */; };
 		50B8C8E02B7F9FC300395447 /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 50B8C8DF2B7F9FC300395447 /* loader.gif */; };
 		50B8C8E22B7FA0C500395447 /* CustomLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B8C8E12B7FA0C500395447 /* CustomLoaderView.swift */; };
@@ -64,6 +73,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		504452C22B88D7FC001C2833 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50C894EF2B766959006EF270 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 504452AF2B88D7FA001C2833;
+			remoteInfo = KapdeLeloLiveActivityExtension;
+		};
 		50C895082B76695B006EF270 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 50C894EF2B766959006EF270 /* Project object */;
@@ -80,7 +96,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		504452C52B88D7FC001C2833 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				504452C42B88D7FC001C2833 /* KapdeLeloLiveActivityExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		504452B02B88D7FA001C2833 /* KapdeLeloLiveActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = KapdeLeloLiveActivityExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		504452B22B88D7FA001C2833 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		504452B42B88D7FA001C2833 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		504452B72B88D7FA001C2833 /* KapdeLeloLiveActivityBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KapdeLeloLiveActivityBundle.swift; sourceTree = "<group>"; };
+		504452B92B88D7FA001C2833 /* KapdeLeloLiveActivityLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KapdeLeloLiveActivityLiveActivity.swift; sourceTree = "<group>"; };
+		504452BB2B88D7FA001C2833 /* KapdeLeloLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KapdeLeloLiveActivity.swift; sourceTree = "<group>"; };
+		504452BD2B88D7FA001C2833 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		504452BF2B88D7FC001C2833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		504452C12B88D7FC001C2833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5088C5222B84C1E8001030C1 /* SF-Pro-Display-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.ttf"; sourceTree = "<group>"; };
 		5088C5232B84C1E8001030C1 /* SF-Pro-Display-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Heavy.ttf"; sourceTree = "<group>"; };
 		5088C5242B84C1E8001030C1 /* SF-Pro-Display-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.ttf"; sourceTree = "<group>"; };
@@ -91,6 +130,7 @@
 		5088C5292B84C1E8001030C1 /* SF-Pro-Display-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Thin.ttf"; sourceTree = "<group>"; };
 		5088C5322B84C334001030C1 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		5088C5332B84C334001030C1 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		50A3944A2B8725DE00A5925A /* ManBlackBusinessSuit.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = ManBlackBusinessSuit.usdz; sourceTree = "<group>"; };
 		50B8C8DC2B7F9F8400395447 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		50B8C8DF2B7F9FC300395447 /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader.gif; sourceTree = "<group>"; };
 		50B8C8E12B7FA0C500395447 /* CustomLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoaderView.swift; sourceTree = "<group>"; };
@@ -142,6 +182,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		504452AD2B88D7FA001C2833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504452B52B88D7FA001C2833 /* SwiftUI.framework in Frameworks */,
+				504452B32B88D7FA001C2833 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50C894F42B766959006EF270 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -166,6 +215,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		504452B12B88D7FA001C2833 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				504452B22B88D7FA001C2833 /* WidgetKit.framework */,
+				504452B42B88D7FA001C2833 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		504452B62B88D7FA001C2833 /* KapdeLeloLiveActivity */ = {
+			isa = PBXGroup;
+			children = (
+				504452B72B88D7FA001C2833 /* KapdeLeloLiveActivityBundle.swift */,
+				504452B92B88D7FA001C2833 /* KapdeLeloLiveActivityLiveActivity.swift */,
+				504452BB2B88D7FA001C2833 /* KapdeLeloLiveActivity.swift */,
+				504452BD2B88D7FA001C2833 /* AppIntent.swift */,
+				504452BF2B88D7FC001C2833 /* Assets.xcassets */,
+				504452C12B88D7FC001C2833 /* Info.plist */,
+			);
+			path = KapdeLeloLiveActivity;
+			sourceTree = "<group>";
+		};
+		50A394492B8725D000A5925A /* 3DModels */ = {
+			isa = PBXGroup;
+			children = (
+				50A3944A2B8725DE00A5925A /* ManBlackBusinessSuit.usdz */,
+			);
+			path = 3DModels;
+			sourceTree = "<group>";
+		};
 		50B8C8DE2B7F9FB500395447 /* Gifs */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +279,8 @@
 				50C894F92B766959006EF270 /* Kapde Lelo */,
 				50C8950A2B76695B006EF270 /* Kapde LeloTests */,
 				50C895142B76695B006EF270 /* Kapde LeloUITests */,
+				504452B62B88D7FA001C2833 /* KapdeLeloLiveActivity */,
+				504452B12B88D7FA001C2833 /* Frameworks */,
 				50C894F82B766959006EF270 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -210,6 +291,7 @@
 				50C894F72B766959006EF270 /* Kapde Lelo.app */,
 				50C895072B76695B006EF270 /* Kapde LeloTests.xctest */,
 				50C895112B76695B006EF270 /* Kapde LeloUITests.xctest */,
+				504452B02B88D7FA001C2833 /* KapdeLeloLiveActivityExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,6 +299,7 @@
 		50C894F92B766959006EF270 /* Kapde Lelo */ = {
 			isa = PBXGroup;
 			children = (
+				50A394492B8725D000A5925A /* 3DModels */,
 				50D7F4CF2B86421200173C91 /* CustomModifiers */,
 				50B8C8DE2B7F9FB500395447 /* Gifs */,
 				50F94B702B7E481D0079E0C8 /* Enums */,
@@ -385,6 +468,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		504452AF2B88D7FA001C2833 /* KapdeLeloLiveActivityExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 504452C82B88D7FC001C2833 /* Build configuration list for PBXNativeTarget "KapdeLeloLiveActivityExtension" */;
+			buildPhases = (
+				504452AC2B88D7FA001C2833 /* Sources */,
+				504452AD2B88D7FA001C2833 /* Frameworks */,
+				504452AE2B88D7FA001C2833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KapdeLeloLiveActivityExtension;
+			productName = KapdeLeloLiveActivityExtension;
+			productReference = 504452B02B88D7FA001C2833 /* KapdeLeloLiveActivityExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		50C894F62B766959006EF270 /* Kapde Lelo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50C8951B2B76695B006EF270 /* Build configuration list for PBXNativeTarget "Kapde Lelo" */;
@@ -392,10 +492,12 @@
 				50C894F32B766959006EF270 /* Sources */,
 				50C894F42B766959006EF270 /* Frameworks */,
 				50C894F52B766959006EF270 /* Resources */,
+				504452C52B88D7FC001C2833 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				504452C32B88D7FC001C2833 /* PBXTargetDependency */,
 			);
 			name = "Kapde Lelo";
 			productName = "Kapde Lelo";
@@ -448,6 +550,9 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					504452AF2B88D7FA001C2833 = {
+						CreatedOnToolsVersion = 15.0;
+					};
 					50C894F62B766959006EF270 = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -477,11 +582,20 @@
 				50C894F62B766959006EF270 /* Kapde Lelo */,
 				50C895062B76695B006EF270 /* Kapde LeloTests */,
 				50C895102B76695B006EF270 /* Kapde LeloUITests */,
+				504452AF2B88D7FA001C2833 /* KapdeLeloLiveActivityExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		504452AE2B88D7FA001C2833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504452C02B88D7FC001C2833 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50C894F52B766959006EF270 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -493,6 +607,7 @@
 				5088C5352B84C334001030C1 /* Montserrat-Bold.ttf in Resources */,
 				5088C52B2B84C1E8001030C1 /* SF-Pro-Display-Heavy.ttf in Resources */,
 				5088C52F2B84C1E8001030C1 /* SF-Pro-Display-Medium.ttf in Resources */,
+				50A3944B2B8725DE00A5925A /* ManBlackBusinessSuit.usdz in Resources */,
 				5088C52A2B84C1E8001030C1 /* SF-Pro-Display-Semibold.ttf in Resources */,
 				5088C5312B84C1E8001030C1 /* SF-Pro-Display-Thin.ttf in Resources */,
 				50C894FF2B76695B006EF270 /* Assets.xcassets in Resources */,
@@ -519,6 +634,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		504452AC2B88D7FA001C2833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504452B82B88D7FA001C2833 /* KapdeLeloLiveActivityBundle.swift in Sources */,
+				504452BE2B88D7FA001C2833 /* AppIntent.swift in Sources */,
+				504452BA2B88D7FA001C2833 /* KapdeLeloLiveActivityLiveActivity.swift in Sources */,
+				504452BC2B88D7FA001C2833 /* KapdeLeloLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50C894F32B766959006EF270 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -584,6 +710,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		504452C32B88D7FC001C2833 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 504452AF2B88D7FA001C2833 /* KapdeLeloLiveActivityExtension */;
+			targetProxy = 504452C22B88D7FC001C2833 /* PBXContainerItemProxy */;
+		};
 		50C895092B76695B006EF270 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 50C894F62B766959006EF270 /* Kapde Lelo */;
@@ -597,6 +728,60 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		504452C62B88D7FC001C2833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 637U2CRCZ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KapdeLeloLiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KapdeLeloLiveActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AmanRaghuvanshi.Kapde-Lelo.KapdeLeloLiveActivity";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		504452C72B88D7FC001C2833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 637U2CRCZ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KapdeLeloLiveActivity/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = KapdeLeloLiveActivity;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AmanRaghuvanshi.Kapde-Lelo.KapdeLeloLiveActivity";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		50C895192B76695B006EF270 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -719,6 +904,7 @@
 		50C8951C2B76695B006EF270 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -750,6 +936,7 @@
 		50C8951D2B76695B006EF270 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -857,6 +1044,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		504452C82B88D7FC001C2833 /* Build configuration list for PBXNativeTarget "KapdeLeloLiveActivityExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504452C62B88D7FC001C2833 /* Debug */,
+				504452C72B88D7FC001C2833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		50C894F22B766959006EF270 /* Build configuration list for PBXProject "Kapde Lelo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

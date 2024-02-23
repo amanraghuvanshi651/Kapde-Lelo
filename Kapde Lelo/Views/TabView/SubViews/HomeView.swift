@@ -18,6 +18,7 @@ struct HomeView: View {
     @EnvironmentObject var appState: ApplicationState
     
     @State var searchText = ""
+    @State var isProductDetailViewPresented = false
     
     @State var products = [
         ProductModel(name: "Nike Sportswear Club Fleece", category: "shirt", images: "Male2", price: "85", isLiked: false),
@@ -111,7 +112,19 @@ struct HomeView: View {
                 Section {
                     LazyVGrid(columns: [GridItem(), GridItem()], spacing: 15, content: {
                         ForEach($products, id: \.id) { product in
-                            ProductCardView(product: product)
+                            NavigationLink {
+                                ProductDetailView()
+                            } label: {
+                                ProductCardView(product: product)
+                            }
+
+//                                .buttonStyle(PlainButtonStyle())
+//                                .onTapGesture {
+//                                    isProductDetailViewPresented = true
+//                                }
+//                                .navigationDestination(isPresented: $isProductDetailViewPresented) {
+//                                    ProductDetailView()
+//                                }
                         }
                     })
                 }
