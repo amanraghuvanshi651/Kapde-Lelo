@@ -10,6 +10,8 @@ import SwiftUI
 struct KapdeLeloTabView: View {
     @EnvironmentObject var appState: ApplicationState
     
+    @State var isActive = false
+    
     @State var isCarViewPresented = false
     @State var presentSideMenu = false
     @State var selectedSideMenuTab = 0
@@ -72,16 +74,23 @@ struct KapdeLeloTabView: View {
                     Spacer()
                     
                     if !presentSideMenu {
-                        Button {
-                            isCarViewPresented.toggle()
-                        } label: {
+                        
+                        NavigationLink(destination: CartView()) {
                             Image("Cart")
                                 .resizable()
                                 .frame(width: 50, height: 50)
                         }
-                        .navigationDestination(isPresented: $isCarViewPresented) {
-                            CartView()
-                        }
+                        
+//                        Button {
+//                            isCarViewPresented.toggle()
+//                        } label: {
+//                            Image("Cart")
+//                                .resizable()
+//                                .frame(width: 50, height: 50)
+//                        }
+//                        .navigationDestination(isPresented: $isCarViewPresented) {
+//                            CartView()
+//                        }
                     }
                 }
                 .padding(.horizontal, 20)

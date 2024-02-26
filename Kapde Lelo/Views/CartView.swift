@@ -144,22 +144,36 @@ struct CartView: View {
                 }
                 
                 Section {
-                    Button(action: {
-                        isPaymentStatusViewPresented = true
-                    }, label: {
+                    NavigationLink {
+                        PaymentStatusView()
+                    } label: {
                         Text("Checkout")
                             .foregroundStyle(.white)
                             .frame(maxWidth: .infinity, maxHeight: 20)
-                    })
+                    }
                     .padding()
                     .frame(maxWidth: .infinity)
                     .background(Color(APP_MAIN_COLOR, bundle: nil))
                     .clipShape(.rect(cornerRadius: 10))
                     .padding(.horizontal, 20)
                     .padding(.bottom, 15)
-                    .navigationDestination(isPresented: $isPaymentStatusViewPresented) {
-                        PaymentStatusView()
-                    }
+                    
+//                    Button(action: {
+//                        isPaymentStatusViewPresented = true
+//                    }, label: {
+//                        Text("Checkout")
+//                            .foregroundStyle(.white)
+//                            .frame(maxWidth: .infinity, maxHeight: 20)
+//                    })
+//                    .padding()
+//                    .frame(maxWidth: .infinity)
+//                    .background(Color(APP_MAIN_COLOR, bundle: nil))
+//                    .clipShape(.rect(cornerRadius: 10))
+//                    .padding(.horizontal, 20)
+//                    .padding(.bottom, 15)
+//                    .navigationDestination(isPresented: $isPaymentStatusViewPresented) {
+//                        PaymentStatusView()
+//                    }
                 }
             }
             .contentMargins(.top, 10)
