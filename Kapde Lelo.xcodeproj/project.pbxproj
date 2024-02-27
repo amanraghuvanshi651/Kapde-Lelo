@@ -25,6 +25,11 @@
 		5088C5312B84C1E8001030C1 /* SF-Pro-Display-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5088C5292B84C1E8001030C1 /* SF-Pro-Display-Thin.ttf */; };
 		5088C5342B84C334001030C1 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5088C5322B84C334001030C1 /* Montserrat-Regular.ttf */; };
 		5088C5352B84C334001030C1 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5088C5332B84C334001030C1 /* Montserrat-Bold.ttf */; };
+		5098CB302B8DF512005B32A8 /* EmptyButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5098CB2F2B8DF512005B32A8 /* EmptyButtonStyle.swift */; };
+		5098CB322B8E0D96005B32A8 /* AddAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5098CB312B8E0D96005B32A8 /* AddAddressView.swift */; };
+		5098CB342B8E106B005B32A8 /* CustomTextFieldWithBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5098CB332B8E106B005B32A8 /* CustomTextFieldWithBackgroundView.swift */; };
+		5098CB362B8E1364005B32A8 /* AddReviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5098CB352B8E1364005B32A8 /* AddReviewView.swift */; };
+		5098CB382B8E197F005B32A8 /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5098CB372B8E197F005B32A8 /* PaymentView.swift */; };
 		50A3944B2B8725DE00A5925A /* ManBlackBusinessSuit.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 50A3944A2B8725DE00A5925A /* ManBlackBusinessSuit.usdz */; };
 		50B8C8DD2B7F9F8400395447 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B8C8DC2B7F9F8400395447 /* LoaderView.swift */; };
 		50B8C8E02B7F9FC300395447 /* loader.gif in Resources */ = {isa = PBXBuildFile; fileRef = 50B8C8DF2B7F9FC300395447 /* loader.gif */; };
@@ -130,6 +135,11 @@
 		5088C5292B84C1E8001030C1 /* SF-Pro-Display-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Thin.ttf"; sourceTree = "<group>"; };
 		5088C5322B84C334001030C1 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		5088C5332B84C334001030C1 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		5098CB2F2B8DF512005B32A8 /* EmptyButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyButtonStyle.swift; sourceTree = "<group>"; };
+		5098CB312B8E0D96005B32A8 /* AddAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAddressView.swift; sourceTree = "<group>"; };
+		5098CB332B8E106B005B32A8 /* CustomTextFieldWithBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldWithBackgroundView.swift; sourceTree = "<group>"; };
+		5098CB352B8E1364005B32A8 /* AddReviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewView.swift; sourceTree = "<group>"; };
+		5098CB372B8E197F005B32A8 /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
 		50A3944A2B8725DE00A5925A /* ManBlackBusinessSuit.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = ManBlackBusinessSuit.usdz; sourceTree = "<group>"; };
 		50B8C8DC2B7F9F8400395447 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 		50B8C8DF2B7F9FC300395447 /* loader.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loader.gif; sourceTree = "<group>"; };
@@ -361,6 +371,9 @@
 				50B8C8E32B7FA93B00395447 /* CartView.swift */,
 				50CBCDF92B83798B0098BCD6 /* PaymentStatusView.swift */,
 				50F6FBC02B84A7AA00F05D4A /* ProductDetailView.swift */,
+				5098CB312B8E0D96005B32A8 /* AddAddressView.swift */,
+				5098CB352B8E1364005B32A8 /* AddReviewView.swift */,
+				5098CB372B8E197F005B32A8 /* PaymentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -384,6 +397,7 @@
 			isa = PBXGroup;
 			children = (
 				50CB7A9A2B79F6110065FDD7 /* AppState.swift */,
+				5098CB2F2B8DF512005B32A8 /* EmptyButtonStyle.swift */,
 			);
 			path = HelperClasses;
 			sourceTree = "<group>";
@@ -425,6 +439,7 @@
 				50B8C8E52B7FACEE00395447 /* CartProductView.swift */,
 				50CBCDF32B8349470098BCD6 /* AddressView.swift */,
 				50CBCDF52B836D4D0098BCD6 /* PaymentCardView.swift */,
+				5098CB332B8E106B005B32A8 /* CustomTextFieldWithBackgroundView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -653,6 +668,7 @@
 				50F6FBC12B84A7AA00F05D4A /* ProductDetailView.swift in Sources */,
 				50CB7AA02B79F6B40065FDD7 /* LoginView.swift in Sources */,
 				50FFF3022B7E0D400018E3A3 /* BrandModel.swift in Sources */,
+				5098CB302B8DF512005B32A8 /* EmptyButtonStyle.swift in Sources */,
 				50CBCDF62B836D4D0098BCD6 /* PaymentCardView.swift in Sources */,
 				50D7F4D52B86437500173C91 /* ReviewModel.swift in Sources */,
 				50C36A042B7C9E1E00A7EEDD /* MyCardsView.swift in Sources */,
@@ -673,11 +689,15 @@
 				50CB7ABC2B7A569F0065FDD7 /* CustomTextFieldView.swift in Sources */,
 				50BCAA7D2B7B7A10004088C8 /* ResetPasswordView.swift in Sources */,
 				50BCAA7B2B7B4F69004088C8 /* CodeVerificationView.swift in Sources */,
+				5098CB342B8E106B005B32A8 /* CustomTextFieldWithBackgroundView.swift in Sources */,
+				5098CB322B8E0D96005B32A8 /* AddAddressView.swift in Sources */,
 				50C894FB2B766959006EF270 /* Kapde_LeloApp.swift in Sources */,
+				5098CB382B8E197F005B32A8 /* PaymentView.swift in Sources */,
 				50C895292B766BF3006EF270 /* ContentViewModel.swift in Sources */,
 				50B8C8DD2B7F9F8400395447 /* LoaderView.swift in Sources */,
 				50CB7AA42B7A2A3D0065FDD7 /* CreateAccountView.swift in Sources */,
 				50C36A072B7CA31200A7EEDD /* ProductCardView.swift in Sources */,
+				5098CB362B8E1364005B32A8 /* AddReviewView.swift in Sources */,
 				50CB7AA62B7A2A480065FDD7 /* SignUpView.swift in Sources */,
 				50C369FE2B7C9CC200A7EEDD /* HomeView.swift in Sources */,
 				50FFF3042B7E1FFA0018E3A3 /* ProductModel.swift in Sources */,

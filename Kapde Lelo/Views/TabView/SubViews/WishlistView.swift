@@ -45,7 +45,14 @@ struct WishlistView: View {
                 Section {
                     LazyVGrid(columns: [GridItem(), GridItem()], spacing: 15, content: {
                         ForEach($products, id: \.id) { product in
-                            ProductCardView(product: product)
+                            NavigationLink {
+                                ProductDetailView()
+                            } label: {
+                                ProductCardView(product: product)
+                            }
+                            .foregroundStyle(.black)
+                            .buttonStyle(EmptyButtonStyle())
+//                            ProductCardView(product: product)
                         }
                     })
                 }

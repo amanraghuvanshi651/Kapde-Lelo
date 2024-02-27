@@ -117,6 +117,8 @@ struct HomeView: View {
                             } label: {
                                 ProductCardView(product: product)
                             }
+                            .foregroundStyle(.black)
+                            .buttonStyle(EmptyButtonStyle())
 
 //                                .buttonStyle(PlainButtonStyle())
 //                                .onTapGesture {
