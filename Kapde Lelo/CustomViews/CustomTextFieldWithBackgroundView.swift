@@ -22,20 +22,22 @@ struct CustomTextFieldWithBackgroundView: View {
                 Spacer()
             }
             
-            if height <= 50 {
-                TextField("", text: $textfieldText)
-                    .font(.custom(SF_PRO_TEXT_MEDIUM, size: 20))
-                    .frame(height: height)
-                    .background(Color(BACKGROUND_HIGHLIGHT_COLOR, bundle: nil))
-                    .clipShape(.rect(cornerRadius: 10))
-            } else {
-                TextEditor(text: $textfieldText)
-                    .scrollContentBackground(.hidden)
-                    .font(.custom(SF_PRO_TEXT_MEDIUM, size: 20))
-                    .frame(height: height)
-                    .background(Color(BACKGROUND_HIGHLIGHT_COLOR, bundle: nil))
-                    .clipShape(.rect(cornerRadius: 10))
+            VStack {
+                if height <= 50 {
+                    TextField("", text: $textfieldText)
+                        .font(.custom(SF_PRO_TEXT_MEDIUM, size: 20))
+                        .padding(.horizontal, 10)
+                } else {
+                    TextEditor(text: $textfieldText)
+                        .scrollContentBackground(.hidden)
+                        .font(.custom(SF_PRO_TEXT_MEDIUM, size: 20))
+                        .clipShape(.rect(cornerRadius: 10))
+                        .padding(.horizontal, 10)
+                }
             }
+            .frame(height: height)
+            .background(Color(BACKGROUND_HIGHLIGHT_COLOR, bundle: nil))
+            .clipShape(.rect(cornerRadius: 10))
         }
     }
 }

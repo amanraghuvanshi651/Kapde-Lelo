@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import QuartzCore
 
 struct CartView: View {
     @Environment(\.presentationMode) var presentationMode
@@ -17,6 +18,7 @@ struct CartView: View {
         ProductModel(name: "Training Top Nike Sport Clash", category: "shirt", images: "Male2", price: "52", isLiked: false)
     ]
     @State var isPaymentStatusViewPresented = false
+    @State var isPaymentViewPresented = false
     
     var body: some View {
         VStack {
@@ -79,15 +81,20 @@ struct CartView: View {
                             Spacer()
                             
                             Button {
+                                isPaymentViewPresented = true
                             } label: {
                                 Image("rightArrow")
                                     .resizable()
                                     .frame(width: 20, height: 20)
                             }
                             .foregroundStyle(.black)
+                            .navigationDestination(isPresented: $isPaymentViewPresented) {
+                                PaymentView()
+                            }
+
                         }
                         
-                        PaymentCardView(cardType: .constant(.rupay))
+                        PaymentMethodView(cardType: .constant(.rupay))
                     }
                     .padding(.horizontal, 20)
                     .padding(.bottom, 20)
